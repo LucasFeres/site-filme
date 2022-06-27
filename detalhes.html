@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <header class = "container header col-12">
+      <div class = "row">
+        <div class = "col-1">
+          <img src = "img/electro.png" class = logo>
+        </div>
+        <div class = "col-12 col-sm-12 col-md-12 col-lg-6">
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">LANÇAMENTOS</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">AVALIAÇÕES</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">ENTREVISTAS E MAKINGOF</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">NOVIDADES</a>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <!--Busca-->
+        <div class = "search col-12 col-sm-12 col-md-12 col-lg-4">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" aria-labelledby="Pesquisar filme"
+                aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalhes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css" media="screen" />
+    
+</head>
+  <body>
+    <div class="tag">
+      <h1>DETALHES</h1>
+    </div>
+    <div class="container">
+        <div id="detalheFilme" class="row"></div>
+    </div>
+    <footer class = "container footer col-12">
+        <div class = "col-8">
+          <span> © Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web -</span>
+          <span class = pucminas>  ICEI PUC MINAS  </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        const params = new URLSearchParams(location.search);
+
+        let id = params.get('id');
+
+        dadosFilmes = JSON.parse (localStorage.getItem('db_filmes'));
+
+        let idxFilme = dadosFilmes.results.findIndex((elem)=>elem.id == id);
+
+
+        if(idxFilme > -1)
+        {
+            let filme = dadosFilmes.results[idxFilme];
+
+        document.getElementById('detalheFilme').innerHTML = `  
+        
+  <div class="card mb-3 " style="width: 100;">
+    <div class="full">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://image.tmdb.org/t/p/w500${filme.poster_path}" class="card-img-top" alt="FilmeXPTO">
+      </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">${filme.title}</h5>
+        <p class="card-text">${filme.overview}</p>
+        <p class="card-text"><strong>Popularidade:</strong> ${filme.popularity}</p>
+        <p class="card-text"><strong>Data de Lançamento: </strong>${filme.release_date} </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>`
+}
+else
+{
+    alert('Filme não encontrado');
+}
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electro Filmes</title>
+    <link rel = "stylesheet" href = style.css>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class = "container header col-12">
+      <div class = "row">
+        <div class = "col-2">
+          <img src = "img/electro.png" class = logo>
+        </div>
+        <div class = "col-12 col-sm-12 col-md-12 col-lg-6">
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link" href="#lançamentos">LANÇAMENTOS</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#avaliações">AVALIAÇÕES</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#entrevistas">ENTREVISTAS E MAKINGOF</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#novidades">NOVIDADES</a>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <!--Busca-->
+        <div class = "search col-12 col-sm-12 col-md-12 col-lg-4">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" aria-labelledby="Pesquisar filme"
+                aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!--Titulo-->
+    <main class = "container main">
+      <section class = "row lançamentos" id = "lançamentos">
+        <div class = " col-12">
+          <p class = titulo>Lançamentos</p>
+        </div>
+    <!--Lançamentos--> 
+        <div class = "col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        <div class="carousel-inner">
+<!--Filme 1-->   
+            <div class="carousel-item active">
+            <!--Total-->
+              <div class="row">
+            <!--Video-->
+                <div class ="col-12 col-sm-12 col-md-12 col-lg-6">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/CZ1CATNbXg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <!--Texto-->
+                <div class = "col-12  col-sm-12 col-md-12 col-lg-6">
+                  <p class = "titulovideo">WALL-E</p>
+                  <p class = "texto">Após entulhar a Terra de lixo e poluir a atmosfera com gases tóxicos, a humanidade deixou o planeta e passou a viver em uma gigantesca nave. O plano era que o retiro durasse alguns poucos anos, com robôs sendo deixados para limpar o planeta. WALL-E é o último destes robôs, e sua vida consiste em compactar o lixo existente no planeta. Até que um dia surge repentinamente uma nave, que traz um novo e moderno robô: Eva. A princípio curioso, WALL-E se apaixona e resolve segui-la por toda a galáxia.</p>
+                  <!--Info-->
+                  <p class = "info">
+                    <span class = "info1">Direção:</span>
+                    <span>Andrew Stanton</span>
+
+                    <span class = "info1">Roteiro:</span>
+                    <span>Andrew Stanton, Pete Docter, Jim Reardon</span>
+
+                    <span class = "info1">Estreia:</span>
+                    <span>2008</span>
+                  </p>
+                  <!--Elenco-->
+                  <p class = "info">
+                    <span class = "info1">Elenco:</span>
+                    <span>Andrew Stanton | Ben Burtt | Elissa Knight | Jeff Garlin | outros</span>
+                  </p>
+                  <!--Avaliações-->
+                  <p class = "info">
+                    <span class = "info1">Avaliação:</span>
+                    <span class = "avaliacao">★★★★★ 4.6 / 5</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+<!--Filme 2-->       
+            <div class="carousel-item">
+              <!--Total-->
+              <div class="row">
+                <!--Video-->
+                <div class ="col-12  col-sm-12 col-md-12 col-lg-6">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ORFWdXl_zJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!--Texto-->
+                <div class = "col-12  col-sm-12 col-md-12 col-lg-6">
+                  <p class = titulovideo>Up - Altas Aventuras</p>
+                  <p class = texto>Carl Fredricksen (Edward Asner) é um vendedor de balões que, aos 78 anos, está prestes a perder a casa em que sempre viveu com sua esposa, a falecida Ellie. O terreno onde a casa fica localizada interessa a um empresário, que deseja construir no local um edifício. Após um incidente em que acerta um homem com sua bengala, Carl é considerado uma ameaça pública e forçado a ser internado em um asilo. Para evitar que isto aconteça, ele enche milhares de balões em sua casa, fazendo com que ela levante vôo. O objetivo de Carl é viajar para uma floresta na América do Sul, um local onde ele e Ellie sempre desejaram morar. Só que, após o início da aventura, ele descobre que seu pior pesadelo embarcou junto: Russell (Jordan Nagai), um menino de 8 anos.</p>
+                 <!--Info-->
+                  <p class = info>
+                    <span class = info1>Direção:</span>
+                    <span>Pete Docter</span>
+
+                    <span class = info1>Roteiro:</span>
+                    <span>Pete Docter | Bob Peterson</span>
+
+                    <span class = info1>Estreia:</span>
+                    <span>2009</span>
+                  </p>
+                  <!--Elenco-->
+                  <p class = "info">
+                    <span class = "info1">Elenco:</span>
+                    <span>Pete Docter | Ed Asner | Bob Peterson | Jordan Nagai | outros</span>
+                  </p>
+                  <!--Avaliações-->
+                  <p class = "info">
+                    <span class = "info1">Avaliação:</span>
+                    <span class = "avaliacao">★★★★★ 4.6 / 5</span>
+                  </p>
+                </div>  
+              </div>
+            </div>
+<!--Filme 3-->        
+            <div class="carousel-item">
+                <!--Total-->
+              <div class="row">
+                <!--Video-->
+                <div class ="col-12  col-sm-12 col-md-12 col-lg-6">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/FLzfXQSPBOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!--Texto-->
+                <div class = "col-12 col-sm-12 col-md-12 col-lg-6">
+                  <p class = titulovideo>Frozen - Uma Aventura Congelante</p>
+                  <p class = texto>A caçula Anna (Kristen Bell/Gabi Porto) adora sua irmã Elsa (Idina Menzel/Taryn Szpilman), mas um acidente envolvendo os poderes especiais da mais velha, durante a infância, fez com que os pais as mantivessem afastadas. Após a morte deles, as duas cresceram isoladas no castelo da família, até o dia em que Elsa deveria assumir o reinado de Arendell. Com o reencontro das duas, um novo acidente acontece e ela decide partir para sempre e se isolar do mundo, deixando todos para trás e provocando o congelamento do reino. É quando Anna decide se aventurar pelas montanhas de gelo para encontrar a irmã e acabar com o frio.</p>
+                 <!--Info-->
+                  <p class = info>
+                    <span class = info1>Direção:</span>
+                    <span>Chris Buck, Jennifer Lee</span>
+
+                    <span class = info1>Roteiro:</span>
+                    <span>Jennifer Lee</span>
+
+                    <span class = info1>Estreia:</span>
+                    <span>2014</span>
+                  </p>
+                  <!--Elenco-->
+                  <p class = "info">
+                    <span class = "info1">Elenco:</span>
+                    <span>Kristen Bell | Idina Menzel | Josh Gad | Jonathan Groff | outros</span>
+                  </p>
+                  <!--Avaliações-->
+                  <p class = "info">
+                    <span class = "info1">Avaliação:</span>
+                    <span class = "avaliacao">★★★☆☆ 3.7 / 5</span>
+                  </p>
+                </div>  
+              </div>
+            </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      </section>
+      <!--Destaques-->
+      <div class="row destaques" id = "listaFilmes"></div>
+      <div class= "col-20 bt_maisfilmes">
+        <button type="button" class="btn btn-info btf" id = "btMaisFilmes">Ver Mais</button>
+        <button type="button" class="btn btn-info btf" id = "btMenosFilmes">Ver Menos</button>
+        <button type="button" class="btn btn-info btf" id = "btEsconder">Fechar</button>
+    </div>
+     <!--Avaliações-->
+     <section class = "row novas_avaliações" id = "avaliações">
+        <div class="col-12">
+          <p class = titulo-2> Novas avaliações </p>  
+        </div>
+        <!--Avaliação 1-->
+        <div class = "row col-12 col-sm-12 col-md-12 col-lg-4">
+          <div class = "fotouser col-3">
+            <img src = "img/wall-e.png">
+          </div>
+          <div class = "conteudo col-9">
+            <p class = "nome">Gustavo</p>
+            <span class ="info1">Avaliação: </span>
+            <span class ="texto">Um clássico dos cinemas, retrata uma história incrível desse "robozinho" e sua amada diante toda confusão e drama do filme, em que os dois tentam salvar a humanidade.</span>
+            <p></p>
+            <span class = "avaliacao">★★★☆☆ 3.0 / 5</span>
+            <span class = "info1">06/01/2009</span>
+            <p class = "tagzinha col-3">Wall-E</p>
+          </div>
+        </div>
+         <!--Avaliação 2-->
+         <div class = "row col-12 col-sm-12 col-md-12 col-lg-4">
+          <div class = "fotouser col-3">
+            <img src = "img/ninja.png">
+          </div>
+          <div class = "conteudo col-9">
+            <p class = "nome">Amanda</p>
+            <span class ="info1">Avaliação: </span>
+            <span class ="texto">Filme MARAVILHOSO, conta uma incrível história de um senhor de idade e uma criança que é sensacional, mostrei para os meus filhos e eles amaram, realmente esse filme mexe com qualquer um que vê, fora os lugares lindos que aparecem.</span>
+            <p></p>
+            <span class = "avaliacao">★★★★☆ 4.3 / 5</span>
+            <span class = "info1">21/08/2011</span>
+            <p class = "tagzinha col-3">Up - Altas Aventuras</p>
+          </div>
+        </div>
+        <!--Avaliação 3-->
+        <div class = "row col-12 col-sm-12 col-md-12 col-lg-4">
+          <div class = "fotouser col-3">
+            <img src = "img/jacare.png">
+          </div>
+          <div class = "conteudo col-9">
+            <p class = "nome">Lacoste</p>
+            <span class ="info1">Avaliação: </span>
+            <span class ="texto">Que filmes meus amigos e amigas, que filme, fazia tempos que um filme não mexia tanto com as crianças de hoje em dia, Frozen fez os pais ficaram loucos, todas as crianças amaram e com certeza esse filme vai marcar uma geração.</span>
+            <p></p>
+            <span class = "avaliacao">★★★★☆ 3.8 / 5</span>
+            <span class = "info1">17/07/2018</span>
+            <p class = "tagzinha col-3">Frozen</p>
+          </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="button" class="btn btn-secondary col-12 col-sm-12 col-md-6 col-lg-3">+ Carregar mais avaliações</button>
+        </div>
+     </section>
+     <!--Section de Entrevistas e mackingof-->
+     <section class="row entrevistas_e_mackingof" id = "entrevistas">
+       <div class = "col-12">
+         <p class= "titulo-2">Entrevistas & Making of</p>
+       </div>
+       <!--Filmes-->
+       <div class = "row e col-12">
+        <!--Filme 1--> 
+        <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+          <iframe width="280" height="157.5" src="https://www.youtube.com/embed/nLqvK1rT8tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="info1">FROZEN (2013) | Behind the Scenes Disney Animation Movie</p>
+          <span class="info1">Diretor: </span>
+          <span class = "info">Chris Buck, Jennifer Lee</span>
+          <p></p>
+          <span class = "info1">Roteiro: </span>
+          <span class = "info">Jennifer Lee</span>
+          <span class = "info1">Estreia: </span>
+          <span class = "info">2013</span>
+        </div>
+         <!--Filme 2-->
+         <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+          <iframe width="280" height="157.5" src="https://www.youtube.com/embed/9uAr6qK4jXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="info1">UP - Altas Aventuras</p>
+          <span class="info1">Diretor: </span>
+          <span class = "info">Pete Docter</span>
+          <p></p>
+          <span class = "info1">Roteiro: </span>
+          <span class = "info">Pete Docter | Bob Peterson</span>
+          <span class = "info1">Estreia: </span>
+          <span class = "info">2009</span>
+        </div> 
+         <!--Filme 3-->
+     <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+      <iframe width="280" height="157.5" src="https://www.youtube.com/embed/Q2UbLqk5Ox0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="info1">Wall-E: Talent Broll | ScreenSlam</p>
+      <span class="info1">Diretor: </span>
+      <span class = "info">Andrew Stanton</span>
+      <p></p>
+      <span class = "info1">Roteiro: </span>
+      <span class = "info">Andrew Stanton, Pete Docter, Jim Reardon</span>
+      <span class = "info1">Estreia: </span>
+      <span class = "info">2008</span>
+    </div> 
+  </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-secondary col-12 col-sm-12 col-md-6 col-lg-3">+ Carregar mais filmes</button>
+          </div>
+     </section>
+     <!--Novidades-->
+     <section class = "row novidades" id = "novidades">
+        <div class ="menu_novidades col-12 col-sm-12 col-md-12 col-lg-7">
+          <h1 class = "titulo-2">Novidades</h1>
+
+          <div class = "row materia">
+
+            <!--Imagem e Texto Novidade 1-->
+            <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+              <img src="img/estranho.jpg" class = "materiaimg">
+            </div>
+          <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+            <p class = "nome">Doutor Estranho no Multiverso da Loucura</p>
+            <p class = "info">O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário.</p>
+            <span class = "tagzinha col-3">Quadrinhos </span>
+            <span class = "tagzinha col-3">Ficção </span>
+            <span class = "tagzinha col-3">Filme </span>
+          </div>
+          </div>
+          <div class = "row materia">
+            <!--Imagem e Texto Novidade 2-->
+              <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+                <img src="img/aranha.jpg" class = "materiaimg">
+              </div>
+            <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+              <p class = "nome">Homem-Aranha: Sem Volta para Casa</p>
+              <p class = "info">O Homem-Aranha precisa lidar com as consequências da sua verdadeira identidade ter sido descoberta.</p>
+              <span class = "tagzinha col-3">Quadrinhos </span>
+              <span class = "tagzinha col-3">Ficção </span>
+              <span class = "tagzinha col-3">Filme </span>
+            </div>
+            </div>
+            <div class = "row materiaend">
+            <!--Imagem e Texto Novidade 3-->
+                <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+                  <img src="img/ultimato.jpg" class = "materiaimg">
+                </div>
+              <div class = "col-12 col-sm-12 col-md-12 col-lg-4">
+                <p class = "nome">Vingadores: Ultimato</p>
+                <p class = "info">Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
+                <span class = "tagzinha col-3">Quadrinhos </span>
+                <span class = "tagzinha col-3">Ficção </span>
+                <span class = "tagzinha col-3">Filme </span>
+              </div>
+              </div>
+        </div>
+        <div class = "menu_sobre col-12 col-sm-12 col-md-12 col-lg-5">
+         <h1 class = titulo-2>Sobre</h1>
+         <p class = "texto">Esse é um site criado pelo aluno Lucas Andrade Feres, pelo Instituto de Ciências Exatas e Informática da PUC-MG (ICEI - PUC-MG). Inicialmente criado como um site de teste para a disciplina de Desenvolvimento de Interfaces Web (DIW), posteriormente tornando-se o protótipo index do site. Essa é a primeira versão.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p class = "titulo-2">Editorial</p>
+        <span class = "info1">Redação</span>
+        <span class = "texto">Lucas Andrade Feres</span>
+        <p></p>
+
+        <span class = "info1">Pesquisa</span>
+        <span class = "texto">Lucas Andrade Feres</span>
+        <p></p>
+
+        <span class = "info1">Gerente Geral</span>
+        <span class = "texto">Lucas Andrade Feres</span>
+        <p></p>
+
+        </div> 
+     </section>
+    <!--Footer-->
+    <footer class = "container footer">
+      <div class = "row">
+        <div class = "col-12">
+          <span> © Copyright 2022 - Disciplina de Desenvolvimento de interfaces web   -</span>
+          <span class = pucminas>  ICEI PUC MINAS  </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
